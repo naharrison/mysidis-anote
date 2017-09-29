@@ -1,0 +1,113 @@
+\linenumbers
+
+\chapter{Introduction}
+\label{cha:Introduction}
+
+Deep-inelastic scattering (DIS) experiments ($ep \rightarrow eX$) at SLAC, HERA, and CERN during the 1960s, 70s, 80s, and 90s have mapped parton distribution functions (PDFs) in a wide range of $x$, the fractional parton momentum longitudinal to the nucleon direction of motion, and $Q^2$, the square of the momentum transferred between the scattered electron and the struck parton \cite{NNPDF13}.
+Processes in which transverse spin and momentum are integrated over are described well by these PDFs, however a complete description of the proton depends on transverse quantities.
+In the last 20 years, various experiments have used semi-inclusive deep inelastic scattering (SIDIS) ($ep \rightarrow ehX$) to study transverse momentum dependent parton distribution functions (TMDs) which depend on the three-dimensional momentum of the parton, where a particular hadron, $h$, is detected in the final state.
+It is expected that TMDs will give insights into the quark orbital angular momentum contribution to the proton spin.
+
+A SIDIS reaction is one in which a beam lepton, $\ell$, scatters off of a target nucleon, $N$, via the exchange of a photon and the scattered lepton, $\ell^{\prime}$, is detected along with a single hadron, $h$; everything else in the final state, $X$, is ignored, i.e.,
+\begin{equation}
+\label{eq:sidis}
+\ell (k) + N(P) \rightarrow \ell^{\prime} (k^{\prime} ) + h(P_{h}) + X(P_{X})
+\end{equation}
+where $k$, $P$, $k^{\prime}$, $P_{h}$, and $P_{X}$ are the 4-momenta of $\ell$, $N$, $\ell^{\prime}$, $h$, and $X$, respectively.
+For this analysis, reactions of the type $ep \rightarrow e \pi^{\pm}X$ are studied.
+The momentum transfer (or virtuality), $Q^{2}$, is given by
+\begin{equation}
+\label{eq:QQ}
+Q^{2} = -q^{2} = -(k - k^{\prime})^{2}
+\end{equation}
+and the invariant mass of the final state, $W$, is given by
+\begin{equation}
+\label{eq:invarmassfinal}
+W^2 = (P + q)^{2} .
+\end{equation}
+Furthermore, it is convenient to introduce the kinematic variables
+
+\begin{equation}
+\label{eq:momfracs}
+x = \frac{Q^{2}}{2P \cdot q}
+, \qquad
+y = \frac{P \cdot q}{P \cdot k}
+, \qquad
+z = \frac{P \cdot P_{h}}{P \cdot q}
+, \qquad
+\gamma = \frac{2Mx}{Q}
+\end{equation}
+%
+where $x$ is the longitudinal momentum fraction of the struck quark inside the target nucleon, $z$ is the momentum fraction of the final state hadron, and M is the mass of the target nucleon.
+An important quantity is the hadron angle, $\phi_{h}$, which is the angle between the lepton plane and the hadron production plane as defined by the Trento convention~\cite{Bacchetta04}).
+
+Assuming single photon exchange, the leptoproduction cross-section can be written as (see~\cite{Bacchetta07})
+\begin{equation}
+\label{eq:crosssection1}
+\begin{split}
+\frac{d^{6} \sigma}{dx\ dQ^2\ d \psi\ dz\ d \phi_{h}\ dP_{h \perp}^{2}} = \frac{1}{2(k\cdot P)x} \frac{\alpha^{2} y}{8zQ^{4}}2MW^{\mu \nu}L_{\mu \nu}
+\end{split}
+\end{equation}
+where $W^{\mu \nu}$ is the hadronic tensor and $L_{\mu \nu}$ is the leptonic tensor.
+For an unpolarized target, averaging over the beam polarization, and integrating over $\psi$, equation~\ref{eq:crosssection1} can be written as
+\begin{equation}
+\label{eq:crosssection3}
+\begin{split}
+\frac{d^{5} \sigma}{dx\ dQ^2\ dz\ d \phi_{h}\ dP_{h \perp}^{2}} = \frac{2\pi}{2(k\cdot P)x} \frac{\alpha^{2}}{xyQ^{2}} \frac{y^{2}}{2 \left( 1 - \varepsilon \right)} \left( 1 + \frac{\gamma^{2}}{2x} \right) \left\{ F_{UU,T} + \varepsilon F_{UU,L} \right.
+\\
+\left. + \sqrt{2 \varepsilon \left( 1 + \varepsilon \right)} \cos \phi_{h} F^{\cos \phi_{h}}_{UU} + \varepsilon \cos \left( 2 \phi_{h} \right) F_{UU}^{\cos2\phi_{h}} \right\}.
+\end{split}
+\end{equation}
+Factoring out the first two structure functions gives
+\begin{equation}
+\label{eq:crosssection4}
+\begin{split}
+\frac{d^{5} \sigma}{dx\ dQ^2\ dz\ d \phi_{h}\ dP_{h \perp}^{2}} = \frac{2\pi}{2(k\cdot P)x} \frac{\alpha^{2}}{xyQ^{2}} \frac{y^{2}}{2 \left( 1 - \varepsilon \right)} \left( 1 + \frac{\gamma^{2}}{2x} \right) \left( F_{UU,T} \right.
+\\
+\left. + \varepsilon F_{UU,L} \right) \left\{ 1 + A^{\cos\phi_{h}}_{UU} \cos\phi_{h} + A^{\cos2\phi_{h}}_{UU} \cos2\phi_{h} \right\}
+\end{split}
+\end{equation}
+where
+\begin{equation}
+\label{eq:moments}
+\begin{split}
+A^{\cos\phi_{h}}_{UU} = \frac{\sqrt{2 \varepsilon \left( 1 + \varepsilon \right)} F^{cos \phi_{h}}_{UU}}{F_{UU,T} + \varepsilon F_{UU,L}}
+\\
+A^{\cos2\phi_{h}}_{UU} = \frac{\varepsilon F^{cos2 \phi_{h}}_{UU}}{F_{UU,T} + \varepsilon F_{UU,L}}
+\end{split}
+\end{equation}
+are the ratio of structure functions and are called the $\cos\phi_h$ and $\cos 2\phi_h$ moments of the SIDIS cross-section.
+Everything in front of the curly brackets is called $A_0$.
+
+According to the factorization theorem \cite{Collins88}\cite{Sterman95}, structure functions can, in the Bjorken limit, be written as convolutions of TMDs and fragmentation functions (FFs).
+Using the notation $\hat{\textbf{h}} = \textbf{P}_{h\perp} / \left| \textbf{P}_{h\perp} \right|$ and
+\begin{equation}
+\label{eq:convolution}
+\mathcal{C} \left[wfD\right] = x \sum_a e_a^2 \int d^2 \textbf{k}_T\ d^2 \textbf{p}_T\ \delta^{(2)} (\textbf{k}_T - \textbf{p}_T - \textbf{P}_{h\perp} / z) w(\textbf{k}_T, \textbf{p}_T) f^a(x, k_T^2) D^a(z, p_T^2)
+\end{equation}
+where $w(\textbf{k}_T, \textbf{p}_T)$ is a weight function and the summation runs over quarks and anti-quarks, the above structure functions are given at tree-level up to twist-3 in \cite{Bacchetta07} as
+\begin{equation}
+\label{eq:SFsAsConvolutions}
+\begin{aligned}
+F_{UU,T} &= \mathcal{C} \left[ f_1 D_1 \right],
+\\
+F_{UU,L} &= 0,
+\\
+F_{UU}^{\cos\phi_h} &= \frac{2M}{Q} \mathcal{C} \left[ - \frac{\hat{\textbf{h}} \cdot \textbf{p}_T}{M_h} \left( xhH_1^\perp + \frac{M_h}{M} f_1 \frac{\tilde{D}^\perp}{z} \right) - \frac{\hat{\textbf{h}} \cdot \textbf{k}_T}{M} \left( xf^\perp D_1 + \frac{M_h}{M} h_1^\perp \frac{\tilde{H}}{z} \right) \right]
+\\
+F_{UU}^{\cos2\phi_h} &= \mathcal{C} \left[ -\frac{2(\hat{\textbf{h}} \cdot \textbf{p}_T) (\hat{\textbf{h}} \cdot \textbf{k}_T) - \textbf{p}_T \cdot \textbf{k}_T}{MM_h} h_1^\perp H_1^\perp \right]
+\end{aligned}
+\end{equation}
+where $\textbf{k}_T$ is the transverse momentum of the quark inside of the nucleon with respect to $q$ and $\textbf{p}_T$ is the transverse momentum of the hadron with respect to the direction of the struck quark.
+The functions in these equations are as follows:
+\begin{itemize}
+\item $f_1$ is a twist-2 TMD that describes unpolarized quarks inside of unpolarized nucleons
+\item $D_1$ is a twist-2 FF that describes unpolarized quarks hadronizing into unpolarized hadrons
+\item $H_1^\perp$ is the (twist-2) Collins FF and describes transversely polarized quarks hadronizing into unpolarized hadrons
+\item $h_1^\perp$ is the (twist-2) Boer-Mulders TMD and describes transversely polarized quarks inside of unpolarized nucleons
+\item $h$ and $f^\perp$ are twist-3 TMDs and describe a quark gluon correlation
+\item $\tilde{D}^\perp$ and $\tilde{DH}$ are twist-3 FFs.
+\end{itemize}
+The Boer-Mulders function is of particular interest because it appears in the $A_{UU}^{\cos 2\phi_h}$ term at the leading twist level.
+It is a quark distribution that quantifies a spin-orbit correlation (\mbox{($\textbf{s}_\perp \cdot (\textbf{k}_T \times \hat{z})$)}).
+A non-zero Boer-Mulders function requires non-zero quark orbital angular momentum.

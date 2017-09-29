@@ -1,0 +1,69 @@
+\documentclass[12pt,epsfig]{report}
+
+\usepackage{lineno}
+\usepackage[dvips]{graphicx} \usepackage{rotating}
+\usepackage[usenames]{color} \usepackage{epsfig}
+\usepackage{epsfig}
+\usepackage{url}
+\usepackage{verbatim}
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+\usepackage{pst-plot}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{bm}
+\usepackage{amssymb, amsmath}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{url} \usepackage{pst-plot}
+\usepackage[font=small,format=plain,labelfont=bf,up, justification=justified]{caption}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0.95}
+\renewcommand{\floatpagefraction}{0.35}
+\setcounter{totalnumber}{5}
+
+\usepackage{longtable} % nate
+
+\begin{document}
+
+\title{Exploring the Structure of the Proton via Semi-inclusive Pion Electroproduction}
+\author{Nathan Harrison, Kyungseon Joo}
+
+\maketitle
+
+\abstract{
+Measurements of the $\cos\phi$ moment, $\cos2\phi$ moment, and multiplicity of the semi-inclusive deep inelastic scattering (SIDIS) cross-section have been performed.
+The data set used was the E1-f run from the CEBAF Large Acceptance Spectrometer (CLAS) at Jefferson Lab which ran in 2003.
+The run used a 5.498 GeV longitudinally polarized electron beam and an unpolarized liquid hydrogen target.
+Two pion channels ($\pi+$ and $\pi-$) were studied over a broad kinematical range ($x = 0.1 - 0.6$, $Q^2 = 1.0 - 4.5\ \text{GeV}^2$, $z = 0.0 - 1.0$, $P_{h\perp}^2 = 0.0 - 1.0\ \text{GeV}^2$, and $-180^\circ < \phi_h < 180^\circ$).
+These measurements give insights into the transverse momentum dependence of parton distribution functions (PDFs) which describe the dynamics of quarks and gluons inside of the proton.
+%This may give access to the quark orbital angular momentum contribution to the proton spin.
+This provides access to the orbital motion of quarks in the proton.
+}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+% chapters of the thesis come here.
+\input{chapter1.tex}
+\input{E1f.tex}
+\input{eID.tex}
+\input{hadronID.tex}
+\input{kinematicCuts.tex}
+\input{momCorr.tex}
+\input{MonteCarlo.tex}
+\input{RC.tex}
+\input{BCC.tex}
+\input{systematicUncertainty.tex}
+\input{A0AcAndAcc.tex}
+\input{comparisons.tex} % experimental (HERMES, Osipenko) and theoretical?
+\input{conclusions.tex}
+
+% All the references are located in here
+\input{bibliography.tex}
+
+% appendices: we put them after the references in what ever order we prefer
+
+\appendix
+%\input{GoodRunList.tex}
+
+\end{document}
