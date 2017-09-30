@@ -28,3 +28,17 @@ Every $x$-$Q^2$-$z$-$P_{h\perp}^2$ bin has a different $\phi_h$ fiducial cut (if
 \label{fig:rec_pip_phih_x3_QQ0_z7_PT21}
 \end{figure}
 %
+
+\section{Elimination of Decay Generated Electrons}
+\label{sec:decayGeneratedElectrons}
+Dalitz decay of $\pi^0$s ($\pi^0 \rightarrow \gamma e^+ e^-$) and pair production from photons can produce electron-positron pairs.
+These decay generated electrons are a possible cause of contamination in the electron sample, however, Monte Carlo studies using PYTHIA and PEPSI indicate that the $y$ values for these electrons tend to be large.
+The cut removing events with $y > 0.8$ should therefore eliminate all but a negligible number of decay generated electrons.
+This result can be seen in figure~\ref{fig:decayElectronRemoval} is is also consistent with a similar study in \cite{Prok14}.
+%
+\begin{figure}[htp]
+\centering
+\includegraphics[width=6in]{figures/decayElectronRemoval.png}
+\caption{W distributions for DIS electrons (dashed line) and decay generated electrons (dotted line) without a $y$ cut (left) and with a $y<0.8$ requirement (right). The $y$ cut removes nearly all of the decay generated electrons.}
+\label{fig:decayElectronRemoval}
+\end{figure}
