@@ -3,8 +3,40 @@
 
 Since it is not always possible to determine the ideal set of values for a particular analytical technique, estimates of systematic errors are performed here.
 This is done by making small variations to a particular value, while holding the rest constant, and looking at how the end results change.
-13 sources of systematic errors are studied (labeled 0-12), they are given in table~\ref{tab:sysErrorSources} along with the number of variations and description for each source.
+14 sources of systematic errors are studied (labeled 0-13), the first 13 are given in table~\ref{tab:sysErrorSources} along with the number of variations and description for each source.
+The 14th source of systematic error is variations in the 6 sectors of CLAS; a separate section below is dedicated to this topic.
 
+\section{Sector Dependence}
+\label{sec:SectorDependence}
+In reality, the 6 sectors of CLAS are not identical.
+To account for this, sector dependence is included in the systematic error studies.
+As can be seen in figure~\ref{fig:sectorDep_0_1_4_3}, the variations are both statistical and systematic.
+To avoid double counting the statistical error, the total error is assumed to be:
+%
+\begin{equation}
+\label{eq:totalError_stat_sys}
+\sigma^2 = \sigma^2_{stat} + \sigma^2_{sys}
+\end{equation}
+%
+and the systematic error is then simply:
+%
+\begin{equation}
+\label{eq:sysError_sectorDep}
+\sigma^2_{sys} = \sigma^2 - \sigma^2_{stat}.
+\end{equation}
+%
+In the rare cases when $\sigma^2_{stat}$ is larger than $\sigma^2$, the systematic error is taken to be zero.
+%
+\begin{figure}[htp]
+\centering
+\includegraphics[width=6in]{figures/sectorDep_0_1_4_3.png}
+\caption{Measurements of $A_0$, $A^{\cos\phi}$, and $A^{\cos2\phi}$ for a representitive bin as a function of the electron sector.}
+\label{fig:sectorDep_0_1_4_3}
+\end{figure}
+%
+
+\section{Other Sources of Systematic Uncertainty}
+\label{sec:OtherSystematicUncertainty}
 The systematic error on the final result due to a given source is the RMS of the deviations of the modified result from the original, i.e. the error from source $i$ is
 %
 \begin{equation}
@@ -39,7 +71,7 @@ In the case of model dependence, there is one variation: the second to last iter
 12 & radiative correction model dependence & 1 & the second to last iteration is used \\
 \hline
 \end{tabular}
-\caption{Sources of systematic error studied.}
+\caption{13 of the 14 sources of systematic error studied. The other source is sector dependence, which is handled separately.}
 \label{tab:sysErrorSources}
 \end{table}
 %
@@ -61,7 +93,8 @@ Figure~\ref{fig:systematicErrors_representitiveBin} shows the systematic error c
 %
 \begin{figure}[htp]
 \centering
-\includegraphics[width=6in]{figures/systematicErrors_representitiveBin.png}
+%\includegraphics[width=6in]{figures/systematicErrors_representitiveBin.png}
+\includegraphics[width=6in]{figures/allSystematics_0_1_4_3.png}
 \caption{Systematic errors on $A_0$, $A_{UU}^{\cos\phi_h}$, and $A_{UU}^{\cos 2\phi_h}$ for each source for a representitive bin.}
 \label{fig:systematicErrors_representitiveBin}
 \end{figure}
