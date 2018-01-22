@@ -25,7 +25,10 @@ and the systematic error is then simply:
 \sigma^2_{sys} = \sigma^2 - \sigma^2_{stat}.
 \end{equation}
 %
-In the rare cases when $\sigma^2_{stat}$ is larger than $\sigma^2$, the systematic error is taken to be zero.
+In some cases $\sigma^2_{stat}$ is larger than $\sigma^2$.
+Figure~\ref{fig:normalAndException_sectorSystematics} shows a ``normal'' example (left) and and example when $\sigma^2_{stat} > \sigma^2$ (right).
+When this happens the systematic error is taken to be the average of all the bins.
+Figure~\ref{fig:distributionOfSectorSystematics} shows the distributions of sector systematic errors for $A_0$, $A^{\cos\phi}$, and $A^{\cos 2\phi}$ for $\pi^+$ and $\pi^-$ along with the averages used for $\sigma^2_{sys} = 0$ when $\sigma^2_{stat} > \sigma^2$.
 %
 \begin{figure}[htp]
 \centering
@@ -34,6 +37,19 @@ In the rare cases when $\sigma^2_{stat}$ is larger than $\sigma^2$, the systemat
 \label{fig:sectorDep_0_1_4_3}
 \end{figure}
 %
+\begin{figure}[htp]
+\centering
+\includegraphics[width=6in]{figures/normalAndException_sectorSystematics.png}
+\caption{Example of a ``normal'' case (left) where the fluctuation of the points is due to both statistical and systematic uncertainty, and a case where the fluctuation of the points is fully accounted for by statistical uncertainty alone (i.e. $\sigma^2_{stat} > \sigma^2$) (right).}
+\label{fig:normalAndException_sectorSystematics}
+\end{figure}
+%
+\begin{figure}[htp]
+\centering
+\includegraphics[width=6in]{figures/distributionOfSectorSystematics.png}
+\caption{The distributions of sector systematic errors for $A_0$ (left), $A^{\cos\phi}$ (middle), and $A^{\cos 2\phi}$ (right) for $\pi^+$ (top) and $\pi^-$ (bottom).}
+\label{fig:distributionOfSectorSystematics}
+\end{figure}
 
 \section{Other Sources of Systematic Uncertainty}
 \label{sec:OtherSystematicUncertainty}
