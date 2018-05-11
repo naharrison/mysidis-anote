@@ -1,8 +1,8 @@
 {
 const int n = 4;
 
-TGraphErrors *ghar[n];// = new TGraphErrors();
-TGraphErrors *gosi[n];// = new TGraphErrors();
+TGraphErrors *ghar[n];
+TGraphErrors *gosi[n];
 
 TCanvas *can = new TCanvas("can", "can", 10, 10, 750, 550);
 can->Divide(2, 2, 0.0001, 0.0001);
