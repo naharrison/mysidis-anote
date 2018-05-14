@@ -4,7 +4,7 @@ const int n = 4;
 TGraphErrors *ghar[n];
 TGraphErrors *gosi[n];
 
-TCanvas *can = new TCanvas("can", "can", 10, 10, 750, 550);
+TCanvas *can = new TCanvas("can", "can", 10, 10, 900, 600);
 can->Divide(2, 2, 0.0001, 0.0001);
 can->cd(1);
 
@@ -92,5 +92,7 @@ tL->Draw();
 can->cd(4);
 t2->Draw();
 tR->Draw();
+
+can->SaveAs("osipenkoComparisonVPT2_2zBins.png");
 
 }

@@ -58,5 +58,6 @@ l2->SetLineColor(kRed);
 l2->SetLineWidth(2);
 l2->Draw();
 
+can->SaveAs("missingMassCut.png");
 
 }
