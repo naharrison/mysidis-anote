@@ -1,5 +1,19 @@
 %\documentclass[1p,12pt]{elsarticle}
-\documentclass[aps,prl,twocolumn,showpacs,superscriptaddress,groupedaddress]{revtex4}  % for review and submission
+\documentclass[aps,prl,twocolumn,showpacs,superscriptaddress,groupedaddress]{revtex4-1}  % for review and submission
+
+%%% for double spacing and line numbers
+\usepackage{lineno}
+\linenumbers
+\makeatletter 
+%\gdef\@ptsize{0}% 10pt documents 
+% or: 
+%\gdef\@ptsize{1}% 11pt documents 
+\gdef\@ptsize{2}% 12pt documents 
+\let\@currsize\normalsize 
+\makeatother 
+\usepackage{setspace} 
+\doublespace 
+%%% end for double spacing and line numbers
 
 \usepackage{graphicx}
 \usepackage{dcolumn}
@@ -21,7 +35,7 @@
 \newcommand{\ra}{\rangle}
 
 \begin{document}
-\widetext
+%\widetext
 \newcommand*{\JLAB}{Thomas Jefferson National Accelerator Facility, Newport News, Virginia 23606}
 \affiliation{\JLAB}
 
