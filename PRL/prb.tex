@@ -1,24 +1,9 @@
-%\documentclass[1p,12pt]{elsarticle}
 \documentclass[aps,prl,twocolumn,showpacs,superscriptaddress,groupedaddress]{revtex4-1}  % for review and submission
-
-%%% for double spacing and line numbers
-\usepackage{lineno}
-\linenumbers
-\makeatletter 
-%\gdef\@ptsize{0}% 10pt documents 
-% or: 
-%\gdef\@ptsize{1}% 11pt documents 
-\gdef\@ptsize{2}% 12pt documents 
-\let\@currsize\normalsize 
-\makeatother 
-\usepackage{setspace} 
-\doublespace 
-%%% end for double spacing and line numbers
 
 \usepackage{graphicx}
 \usepackage{dcolumn}
-\usepackage{bm}        % for math
-\usepackage{amssymb}   % for math
+\usepackage{bm} % for math
+\usepackage{amssymb} % for math
 \usepackage{mathtools}
 \usepackage{verbatim}
 
@@ -29,17 +14,16 @@
 \newcommand{\pt}{\vec{p}_\perp}
 \newcommand{\zh}{z}
 \newcommand{\xbj}{x}
-\newcommand{\PT}{P_T}                   % Bjorken variable
+\newcommand{\PT}{P_T} % Bjorken variable
 \newcommand{\ph}{\phi_h}
 \newcommand{\la}{\langle}
 \newcommand{\ra}{\rangle}
 
 \begin{document}
-%\widetext
 \newcommand*{\JLAB}{Thomas Jefferson National Accelerator Facility, Newport News, Virginia 23606}
 \affiliation{\JLAB}
 
-\title{Exploring the Structure of the Proton via Semi-inclusive Pion Electroproduction}
+\title{Cross-section measurements from semi-inclusive pion electroproduction at CLAS}
 
 
 \author{N.~Harrison et al}
@@ -52,22 +36,25 @@
 \begin{abstract}
 
 
-We present studies of the $\cos\phi_h$ and $\cos2\phi_h$ moments and the $\phi_h$-independent term of the semi-inclusive deep inelastic scattering (SIDIS) cross-section in charged pion production.
-The data set used was the E1-f run from the CEBAF Large Acceptance Spectrometer (CLAS) at Jefferson Lab which ran in 2003.
-The run used a 5.498 GeV longitudinally polarized electron beam and an unpolarized liquid hydrogen target.
+We present measurements of the $\cos\phi_h$ and $\cos2\phi_h$ moments and the $\phi_h$-independent term of the semi-inclusive deep inelastic scattering (SIDIS) cross-section in charged pion production.
+The data set used a 5.498 GeV longitudinally polarized electron beam and an unpolarized liquid hydrogen target.
+Final state particles were detected with the CEBAF Large Acceptance Spectrometer (CLAS) at Jefferson Lab.
 Two pion channels ($\pi^+$ and $\pi^-$) were studied over a broad kinematical range ($x = 0.1 - 0.6$, $Q^2 = 1.0 - 4.5\ \text{GeV}^2$, $z = 0.0 - 0.9$, $P_{h\perp}^2 = 0.0 - 1.0\ \text{GeV}^2$, and $-180^\circ < \phi_h < 180^\circ$).
 These measurements give insights into the transverse momentum dependence of parton distribution functions (PDFs) describing the dynamics of quarks and gluons inside of the proton.
 
 \end{abstract}
 
-%\pacs{13.60.-r \sep 13.87.Fh \sep 13.88.+e \sep 14.20.Dh \sep 24.85.+p}
 \pacs{}
 \maketitle
 
-In recent years parton distribution functions have been generalized to contain information not only on the  longitudinal momentum but also on  the transverse momentum distributions of partons in a fast moving hadron.
-Intense theoretical investigations of Transverse Momentum Dependent (TMD) distributions of partons
-and the first unambiguous experimental signals of TMDs indicate that QCD-dynamics inside hadrons 
-is  much richer than what can be learned from collinear parton distributions.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+\textbf{I. INTRODUCTION} \par
+\end{center}
+In recent years parton distribution functions have been generalized to contain information not only on the longitudinal momentum but also on the transverse momentum distributions of partons in a fast moving hadron.
+Intense theoretical investigations of Transverse Momentum Dependent (TMD) distributions of partons and the first unambiguous experimental signals of TMDs indicate that QCD-dynamics inside hadrons is  much richer than what can be learned from collinear parton distributions.
 It is expected that TMDs will give insights into quark orbital motion and its contribution to the proton spin.
 
 Semi-inclusive deep-inelastic scattering (SIDIS) describes an interaction in which a particular hadron, $h$, is detected in the final state.
@@ -80,8 +67,8 @@ A SIDIS reaction is one in which a beam lepton, $\ell$, scatters off of a target
 \end{equation}
 where $k$, $P$, $k^{\prime}$, $P_{h}$, and $P_{X}$ are the 4-momenta of $\ell$, $N$, $\ell^{\prime}$, $h$, and $X$, respectively.
 
- The final-state gluon radiation in SIDIS  was predicted to lead to observable $\cos\phi_h$ modulations of the SIDIS cross section,
-were $\phi_h$ is the azimuthal angle of final state hadrons with respect to the lepton scattering plane,
+The final-state gluon radiation in SIDIS was predicted to lead to observable $\cos\phi_h$ modulations of the SIDIS cross section,
+where $\phi_h$ is the azimuthal angle of final state hadrons with respect to the lepton scattering plane,
 and that effect has been  proposed by Georgi and Politzer in  1977~\cite{Georgi:1977tv}  as a clean test of pQCD.
 Perturbative-QCD effects like gluon radiation are next-to-leading order in the strong coupling constant and can indeed lead to azimuthal
 dependencies in the semi-inclusive DIS cross section, but they contribute mainly at large values of $\Phperp$.
@@ -94,11 +81,21 @@ is produced at short distances via hard-gluon exchange \cite{Berger:1979xz} may 
 significant in the kinematic regime where the ejected meson carries  most of 
 the virtual photon momentum.
 
-The interplay between the parton transverse momentum and spin
-(Boer-Mulders effect~\cite{Boer:1997nt}) can generate a leading-twist
+The interplay between the parton transverse momentum and spin (Boer-Mulders effect~\cite{Boer:1997nt}) can generate a leading-twist
 contribution to the $\cos 2\phi_h$ modulation, which is one of the main focuses of our studies.
+The Boer-Mulders function, discussed in the next section, is of particular interest since it gives insights into the quark angular momentum contribution to the proton spin.
 
-Assuming single photon exchange, the leptoproduction cross-section for an unpolarized beam and unpolarized target can be written as a sum of structure function (see~\cite{Bacchetta:2006tn}):
+This work reports measurements of the $\phi_h$-independent term ($A_0$) and azimuthal moments ($A^{\cos \phi_h}_{UU}$ and $A^{\cos \phi_h}_{UU}$) of the unpolarized SIDIS cross-section for charged pions in a fully differential way using a 5.498 GeV electron beam at the CEBAF Large Acceptance Spectrometer (CLAS) \cite{Mecking:2003zu} at Jefferson Laboratory.
+Only a few measurements of cosine modulations in semi-inclusive DIS experiments have been published in the past~\cite{Aubert:1983cz,Arneodo:1986cf,Adams:1993hs,Breitweg:2000qh}.
+Most measurements averaged over any possible flavour dependence as they refer to hadrons without type nor charge distinction, and only to hydrogen target or hydrogen and deuterium targets combined together.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+\textbf{II. FORMALISM} \par
+\end{center}
+Assuming single photon exchange, the leptoproduction cross-section for an unpolarized beam and unpolarized target can be written as a sum of structure functions (\cite{Bacchetta:2006tn}):
 \begin{equation}
 \label{eq:crosssection3}
 \begin{split}
@@ -151,53 +148,20 @@ They have also been interpreted in terms of average transverse forces acting on 
 Different contributions to the structure function  $F^{\cos \ph}_{UU}$ have been calculated, related to both internal quark motion and the Collins mechanisms.
 Sizable modulations  were predicted for pion production ~\cite{Anselmino:2005nn} with spin-orbit correlations   as the dynamical origin.
 Within this framework, the asymmetry generated at the distribution level is given by either the convolution of the T-odd Boer-Mulders DF $h_1^{\perp}$ with the twist-3 FF $\tilde{H}$ ~\cite{Bacchetta:2006tn}, or the convolution of the  twist-3 T-odd DF $f^\perp$ with the unpolarized FF $D_1$\cite{Metz:2004je}.
-Because the $f^\perp$ DF can be interpreted as the higher-twist analog of the Sivers function, it underscores the potential of $\cos\phi_h$ modulation for studying spin-orbit correlations. 
-Only a few measurements of cosine modulations in semi-inclusive DIS experiments have been published in the past~\cite{Aubert:1983cz,Arneodo:1986cf,Adams:1993hs,Breitweg:2000qh}.
-Most measurements averaged over any possible flavour dependence as they refer to hadrons without type nor charge distinction, and only to hydrogen target or hydrogen and deuterium targets combined together.
+Because the $f^\perp$ DF can be interpreted as the higher-twist analog of the Sivers function, it underscores the potential of $\cos\phi_h$ modulation for studying spin-orbit correlations.
 
-During the last few years several precise SIDIS measurements have become available. The CLAS
-collaboration measured non-zero cosine modulations for positive pions produced
-by 6 GeV/c electrons scattering off the proton~\cite{Osipenko:2008rv}.  The
-HERMES experiment have measured cosine modulations of hadrons produced in the
-scattering of 27.5 GeV/c electrons and positrons off pure hydrogen and deuterium
-targets, where the lepton beam scatters directly off neutrons and protons (with
-only negligible nuclear effects in case of
-deuterium)~\cite{Airapetian:2012yg}. For the first time these modulations were
-determined in a four-dimensional kinematic space for positively and negatively
-charged pions and kaons separately, as well as for unidentified hadrons. At
-COMPASS, positive and negative hadrons produced by the 160 GeV/c muon beam
-scattering off a $\rm ^6LiD$ target have been measured in a three-dimensional
-grid of the relevant kinematic variables $x$, $z$ and
-$\Phperp$~\cite{Adolph:2014pwc}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-In all the experiments, the new data confirm the existence of a sizable
-$\cos\phi_h$ and a non-zero $\cos2\phi_h$ modulations.  However, the results
-published by different experiment appear not fully consistent. For example,
-positive $\cos2\phi_h$ amplitudes for both positively and negatively charged
-hadrons were measured at COMPASS, while at HERMES, positive $\cos 2\phi_h$ amplitudes
-were extracted for negatively charged pions, while for positively charged pions
-the moments are compatible with zero, but tend to be negative in some kinematic
-regions. In all the cases, the amplitudes of the cosine modulations show strong
-kinematic dependencies. 
-The $\cos2\phi_h$ modulation of positive hadrons in two experiments, while showing similar behaviour are significantly different, in particular at relatively large $\Phperp$  ($\Phperp>0.5$ GeV$/c$).
-Opposite-charge pion signals show unexpected large differences which can be related to the peculiar flavor dependence of the Collins function entering the Boer-Mulders term~\cite{Airapetian:2012yg}. Disagreements are typically much bigger for integrated bins, indicating that for 
-more complete and fair comparison between results and between results
-and theoretical models, a fully differential analysis, using the complete
-multi-dimensional information is required.
-
-
-This letter reports measurements of structure functions for the unpolarized beam and target using SIDIS of charged pions from the e1f CLAS data set 
-using a 5.498 GeV electron beam and the CEBAF Large Acceptance 
-Spectro\-meter (CLAS) \cite{Mecking:2003zu} at Jefferson Laboratory.
-Longitudinally polarized electrons were scattered off
-an unpolarized liquid-hydrogen target. 
+\begin{center}
+\textbf{III. EXPERIMENT AND ANALYSIS} \par
+\end{center}
+Longitudinally polarized electrons were scattered off an unpolarized liquid-hydrogen target. 
 Scattered electrons were detected in CLAS.
-Electron candidates were selected by a hardware trigger using a 
-coincidence of the gas Cherenkov counters and the lead-scintillator electromagnetic calorimeters (EC). 
+Electron candidates were selected by a hardware trigger using a coincidence of the gas Cherenkov counters and the lead-scintillator electromagnetic calorimeters (EC). 
 
 Deep-inelastic scattering events were selected by requiring $Q^2>1$ GeV$^2$ and  $W^2>4$ GeV$^2$,
 where $W$ is the invariant mass of the hadronic final state. 
-%A minimum value for the $\pi^\pm$ transverse momentum, $P_T>0.05$ GeV, ensures that the azimuthal angle $\ph$ is well-defined.
 The total number of selected $e\pi^\pm$ coincidences was $\approx 6.7M$ for the presented $z$ range, $0.4<z<0.7$, which selects the semi-inclusive region \cite{Avakian:2010ae}.
 Events with missing-mass values for the $e\pi^\pm$ system that are smaller 
 than 1.35 GeV ($M_{X}(e\pi^\pm)<$1.35 GeV) were discarded to exclude contributions from exclusive processes. 
@@ -223,7 +187,7 @@ A major challenge in extraction of $\phi_h$ distributions is the handling of the
 This is done using Monte Carlo simulations.
 A LUND-MC based event generator (PEPSI~\cite{Mankiewicz:1991dp}) was used to create a realistic large set of events (several iterations were done to make the set ``realistic'') which were passed through a GEANT based simulation of the CLAS detector.
 For a given kinematic space, the acceptance is equal to the number of reconstructed events divided by the number of generated events.
-The number of events in the E1-f data is then divided by the acceptance to get a corrected value for the number of events.
+The number of events in the experimental data is then divided by the acceptance to get a corrected value for the number of events.
 After events have been selected and binned, and after all corrections, including bin centering corrections,  have been applied, 
 a table of values of normalized counts in elementary bins has been extracted in 5-dimensional $x$-$Q^2$-$z$-$\Phperp^2$-$\phi_h$ phase space.
 
@@ -250,9 +214,20 @@ The systematic error on the final result due to a given source is the RMS of the
 %
 where $\Delta_j$ is the difference between the final result with the nominal value and the final result with variation $j$, and $N_v^i$ is the number of variations for source $i$.
 Main sources of systematic uncertainties include the accetance and variations between the six sectors of CLAS.
-%The full list is shown in Table~\ref{Table:accep}
+Typically, the size of the systematic errors is comparable to the size of the statistical errors, indicating that the systematics are well controlled.
+Relatively large systematic errors occur in regions of phase space where the acceptance changes rapidly.
+This acceptance structure is strongly correlated with $z$ and $P_{h\perp}^2$ and the effects can be seen in figure~\ref{fig:A0AcAcc_zPT2bins_x1QQ1_final}.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+\textbf{IV. RESULTS} \par
+\end{center}
+\begin{center}
+\textbf{A. $A_0$, $A_{UU}^{\cos\phi_h}$, and $A_{UU}^{\cos 2\phi_h}$} \par
+\end{center}
 To extract the $\phi_h$-independent term ($A_0$) and azimuthal moments ($A_{UU}^{\cos\phi_h}$ and $A_{UU}^{\cos 2\phi_h}$), the $\phi_h$ distributions for charged pions for each $x-Q^2-z-P_{h\perp}^2$ bin are fit with the function $a(1 + b\cos\phi_h + c\cos 2\phi_h)$.
 The parameters $a$, $b$, and $c$ then directly give $A_0$, $A_{UU}^{\cos\phi_h}$, and $A_{UU}^{\cos 2\phi_h}$ for each $x-Q^2-z-P_{h\perp}^2$ bin.
 A complete table of results can be found in the ancillary files.
@@ -266,11 +241,52 @@ Several representitive plots are shown here in figure~\ref{fig:A0AcAcc_zPT2bins_
 \label{fig:A0AcAcc_zPT2bins_x1QQ1_final}
 \end{figure}
 
-A similar measurement has been published by the CLAS Collaboration using \mbox{E1-6} data~\cite{Osipenko:2008rv}.
+The $cos \phi_h$ modulations for $\pi^+$ and $\pi^-$ differ considerably, sometimes with opposite signs inticating the Boer-Mulders effect in cosine modulations at lower energies plays a more significant role than expected from higher energy measurements.
+A possible suppression of the Cahn effect due to phase space limitations, which play a more important role at lower beam energies, has been discussed by Prokudin et al.
+
+The measured $cos 2 \phi_h$ moment for $\pi^+$ and $\pi^-$ in most of the kinematics are close to each other indicating the contribution from the Boer-Mulders effect may not be dominant.
+The $\rm cos \phi_h$ asymmetry gets contributions only at sub-leading twist and can be used to constrain the related terms~\cite{Cahn:1978se,Anselmino:2005nn,Berger:1979xz}.
+The formalism based on the twist-3 approach could be tested in $Q^2$ dependence of $\cos\phi_h$ modulations.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+\textbf{B. Comparisons} \par
+\end{center}
+During the last few years several precise SIDIS measurements have become available. The CLAS
+collaboration measured non-zero cosine modulations for positive pions produced
+by 6 GeV/c electrons scattering off the proton~\cite{Osipenko:2008rv}.  The
+HERMES experiment have measured cosine modulations of hadrons produced in the
+scattering of 27.5 GeV/c electrons and positrons off pure hydrogen and deuterium
+targets, where the lepton beam scatters directly off neutrons and protons (with
+only negligible nuclear effects in case of
+deuterium)~\cite{Airapetian:2012yg}. For the first time these modulations were
+determined in a four-dimensional kinematic space for positively and negatively
+charged pions.
+At COMPASS, positive and negative hadrons produced by the 160 GeV/c muon beam
+scattering off a $\rm ^6LiD$ target have been measured in a three-dimensional
+grid of the relevant kinematic variables $x$, $z$ and
+$\Phperp$~\cite{Adolph:2014pwc}.
+
+In all the experiments, the new data confirm the existence of a sizable
+$\cos\phi_h$ and a non-zero $\cos2\phi_h$ modulations.  However, the results
+published by different experiment appear not fully consistent. For example,
+positive $\cos2\phi_h$ amplitudes for both positively and negatively charged
+hadrons were measured at COMPASS, while at HERMES, positive $\cos 2\phi_h$ amplitudes
+were extracted for negatively charged pions, while for positively charged pions
+the moments are compatible with zero, but tend to be negative in some kinematic
+regions. In all the cases, the amplitudes of the cosine modulations show strong
+kinematic dependencies. 
+The $\cos2\phi_h$ modulation of positive hadrons in two experiments, while showing similar behaviour are significantly different, in particular at relatively large $\Phperp$  ($\Phperp>0.5$ GeV$/c$).
+Opposite-charge pion signals show unexpected large differences which can be related to the peculiar flavor dependence of the Collins function entering the Boer-Mulders term~\cite{Airapetian:2012yg}. Disagreements are typically much bigger for integrated bins, indicating that for 
+more complete and fair comparison between results and between results
+and theoretical models, a fully differential analysis, using the complete
+multi-dimensional information is required.
+
+A similar measurement has been published by the CLAS Collaboration using a different dataset~\cite{Osipenko:2008rv}.
 However, it only measures the $\pi^+$ channel and has a more limited kinematic range.
 A comparison for the $\pi^+$ channel in overlapping kinematic ranges is done here.
 In order to have a meaningful comparison, the binning scheme used here was temporarily changed to match that of~\cite{Osipenko:2008rv}.
-Figure~\ref{fig:osipenkoComparisonVPT2_2zBins} shows the comparison between E1-f (red up-triangles) and E1-6 (blue down-triangles) as a function of $\Phperp^2$ for two $z$ bins ($0.29 < z < 0.32$ (left column) and $0.32 < z < 0.35$ (right column)) for the $\pi^+$ channel.
+Figure~\ref{fig:osipenkoComparisonVPT2_2zBins} shows the comparison between this analysis (red up-triangles) and the previous CLAS results (blue down-triangles) as a function of $\Phperp^2$ for two $z$ bins ($0.29 < z < 0.32$ (left column) and $0.32 < z < 0.35$ (right column)) for the $\pi^+$ channel.
 The results show clear agreement, both qualitatively and quantitatively, implying good consistency between measurements.
 %
 \begin{figure}[htp]
@@ -280,10 +296,7 @@ The results show clear agreement, both qualitatively and quantitatively, implyin
 \label{fig:osipenkoComparisonVPT2_2zBins}
 \end{figure}
 
-
-The measured $cos 2 \phi_h$ moment for $\pi^+$ and $\pi^-$ in most of the kinematics are close to each other indicating the contribution from the Boer-Mulders effect may not be dominant.
-The $\rm cos \phi_h$ asymmetry gets contributions only at sub-leading twist and can be used to constrain the related terms~\cite{Cahn:1978se,Anselmino:2005nn,Berger:1979xz}.
-The formalism based on the twist-3 approach could be tested in $Q^2$ dependence of $\cos\phi_h$ modulations.  In Fig.~\ref{fig:clas-hermes}, CLAS measurements are compared with corresponding measurements from HERMES experiment~\cite{Airapetian:2012yg}.
+In Fig.~\ref{fig:clas-hermes}, CLAS measurements are compared with corresponding measurements from HERMES experiment~\cite{Airapetian:2012yg}.
 After taking into account the kinematic factors in the expression
 of the $\cos\phi_h$ modulation and $\phi_h$ independent terms (\cite{Bacchetta:2006tn})
 \begin{eqnarray}
@@ -296,12 +309,8 @@ behavior of azimuthal modulations are similar to higher energy measurements.
 For comparison, the lowest $\xbj$ CLAS bin and highest $\xbj$ HERMES bins were used with equal average value of $\xbj\approx$ 0.19, $z\approx$ 0.45 and $\Phperp^2 \approx$ 0.42 GeV$^2$.
 
 The CLAS data provide significant improvements in the precision of azimuthal moments for the kinematic region where the two data sets overlap, and they extend the measurements to the large $\xbj$ region not accessible at HERMES.
-
-The $cos \phi_h$ modulations for $\pi^+$ and $\pi^-$ differ considerably, sometimes with opposite signs inticating the Boer-Mulders effect in cosine modulations at lower energies plays a more significant role than expected from higher energy measurements.
-A possible suppression of the Cahn effect due to phase space limitations, which play a more important role at lower beam energies, has been discussed by Prokudin et al.
 \begin{figure}[h]
 \begin{center}
-%\includegraphics[height=.25\textheight,width=0.4\textwidth]{plots/her-clas-q2-pip-x0.19.z045.pt0.42.pp.pdf}
 \includegraphics[height=.25\textheight,width=0.4\textwidth]{plots/hermes_plot_copy.pdf}
 \end{center}
 \caption{(Color online) The $\cos\phi_h$ modulations in $\pi^\pm$ SIDIS plotted vs $Q^2$. Filled symbols are for $\pi^+$ and open symbols for $\pi^-$.
@@ -310,16 +319,23 @@ The triangles CLAS and open symbols are for HERMES~\cite{Airapetian:2012yg}.}
 \end{figure}
 
 
- 
-%\section{Conclusions}
-
-In summary, we have presented measurements of the kinematic dependences of the azimuthal modulations in semi-inclusive $\pi ^\pm$ electroproduction from the E1-f CLAS data set as a function of $\xbj$, $Q^2$, $z$, and $\Phperp^2$.
-%The $\cos \phi_h$ amplitude was extracted as a function of $\xbj$ and transverse pion momentum $\Phperp$, for  $0.4<z<0.7$.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+\textbf{V. SUMMARY} \par
+\end{center}
+In summary, we have presented measurements of the kinematic dependences of the azimuthal modulations in semi-inclusive $\pi ^\pm$ electroproduction from CLAS as a function of $\xbj$, $Q^2$, $z$, and $\Phperp^2$.
 The $\cos \phi_h$ moment shows considerable dependence on the flavor of final state. The results are compared with published HERMES data~\cite{Airapetian:2012yg}, 
 providing  a significant improvement in precision and can serve as an important input for studies of higher-twist effects.
 The  $Q^2$-dependence of the $\cos\phi_h$ modulation is consistent with 
 the twist-3 nature of the contribution and is consistent with measurements performed at much higher energies and $Q^2$.
 
+The existence of sizable $\cos\phi_h$ modulations and non-zero $\cos 2 \phi_h$ modulations suggest that the Boer-Mulders function is non-zero.
+This hints at a non-zero quark orbital angular momentum contribution to the proton spin, as a non-zero Boer-Mulders function is a necessary condition for this.
+
+\begin{center}
+\textbf{Acknowledgments} \par
+\end{center}
 We thank A. Prokudin and Peter Schweitzer for useful and stimulating discussions.
 We would like to acknowledge the outstanding efforts of the staff of the 
 Accelerator and the Physics Divisions at JLab that made this experiment possible.
@@ -350,12 +366,7 @@ The Jefferson Science Associates (JSA) operates the Thomas Jefferson National Ac
     \label{aluxbtb}
   \end{center}	
 \end{table*}
-%\bibliographystyle{model1a-num-names}
-%\bibliographystyle{elsevier}
 
-%\bibliographystyle{elsarticle-num}
-\bibliography{3dstructure.bib}
 
+\bibliography{3dstructure}
 \end{document}
-
-%and $\boldsymbol{p_T}$ and $\boldsymbol{k_T}$ are the intrinsic quark transverse momenta in the distribution function (DF) and fragmentation function (FF), respectively.
