@@ -1,10 +1,10 @@
 #!/bin/csh -f
 
-rm -f prb.log prb.pdf prbNotes.bib prb.dvi prb.aux prb.bbl prb.blg
+rm -f plb.log plb.pdf plbNotes.bib plb.dvi plb.aux plb.bbl plb.blg
 
-pdflatex prb.tex
-bibtex prb
-pdflatex prb.tex
-pdflatex prb.tex
+pdflatex plb.tex
+bibtex plb
+pdflatex plb.tex
+pdflatex plb.tex
 
-rm -f prb.log prbNotes.bib prb.dvi prb.aux prb.bbl prb.blg
+rm -f plb.log plbNotes.bib plb.dvi plb.aux plb.bbl plb.blg
