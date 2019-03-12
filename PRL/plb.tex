@@ -188,7 +188,7 @@ The number of events in the experimental data is then divided by the acceptance 
 After events have been selected and binned, and after all corrections, including bin centering corrections,  have been applied, 
 a table of values of normalized counts in elementary bins has been extracted in 5-dimensional $x$-$Q^2$-$z$-$\Phperp^2$-$\phi_h$ phase space.
 
-HAPRAD version 2.0 \cite{Akushevich:1999hz,Akushevich:2007jc} was used to calculate radiative corrections for each bin by calculating $\sigma_{rad+tail} \left( x, Q^2, z, P_{h\perp}^2, \phi_h \right)$ for a given \allowbreak $\sigma_{Born} \left( x, Q^2, z, P_{h\perp}^2, \phi_h \right)$ which is obtained from a model.
+HAPRAD version 2.0 \cite{Akushevich:1999hz,Akushevich:2007jc} was used to calculate radiative corrections (RC) for each bin by calculating $\sigma_{rad+tail} \left( x, Q^2, z, P_{h\perp}^2, \phi_h \right)$ for a given \allowbreak $\sigma_{Born} \left( x, Q^2, z, P_{h\perp}^2, \phi_h \right)$ which is obtained from a model.
 The radiative correction factor is then simply
 \begin{equation}
 \begin{split}
@@ -201,7 +201,7 @@ The radiative correction factor is then simply
 and the Born cross-section can be obtained by dividing the measured cross-section by the RC factor, i.e., $\sigma_{Born} = \sigma_{measured}/\text{RC factor}$.
 Three different models were used to study model dependence of radiative corrections.
 
-Fourteen sources of systematic error were studied.
+Fourteen sources of systematic error were studied - eight from electron selection cuts, three from pion selection cuts, one from the acceptance model, one from the RC model, and one from sector dependence.
 The systematic error on the final result due to a given source is the RMS of the deviations of the modified result from the original, i.e. the error from source $i$ is
 %
 \begin{equation}
@@ -210,8 +210,9 @@ The systematic error on the final result due to a given source is the RMS of the
 \end{equation}
 %
 where $\Delta_j$ is the difference between the final result with the nominal value and the final result with variation $j$, and $N_v^i$ is the number of variations for source $i$.
-Main sources of systematic uncertainties include the accetance and variations between the six sectors of CLAS.
-Typically, the size of the systematic errors is comparable to the size of the statistical errors, indicating that the systematics are well controlled.
+Main sources of systematic error include the accetance, electron selection cuts, and variations between the six sectors of CLAS.
+Table~\ref{tab:A0AcAcc_PT2bins_x1QQ1z8} breaks down the relative sizes of the errors for each source for several representative bins.
+Typically, the size of the systematic errors is comparable to the size of the statistical errors.
 Relatively large systematic errors occur in regions of phase space where the acceptance changes rapidly.
 This acceptance structure is strongly correlated with $z$ and $P_{h\perp}^2$ and the effects can be seen in figure~\ref{fig:A0AcAcc_zPT2bins_x1QQ1_final}.
 
@@ -237,6 +238,50 @@ Several representitive plots are shown here in figure~\ref{fig:A0AcAcc_zPT2bins_
 \caption{(Color online) $A_0$ (left column), $A_{UU}^{\cos\phi_h}$ (middle column), and $A_{UU}^{\cos 2\phi_h}$ (right column) vs $P_{h\perp}^2$ for positive pions (red circles) and negative pions (blue triangles). The $x$-$Q^2$ bin is fixed (the high $Q^2$ of $0.2 < x < 0.3$). Several $z$ bins are shown: $0.30 < z < 0.35$ (top row), $0.35 < z < 0.40$ (second row), $0.40 < z < 0.45$ (third row), $0.45 < z < 0.50$ (bottom row).}
 \label{fig:A0AcAcc_zPT2bins_x1QQ1_final}
 \end{figure}
+%
+%
+\begin{table}
+\begin{center}
+\begin{tabular}{ |c||c|c|c|c| } 
+
+  \hline
+  $P_{h\perp}^2$ $(\text{GeV}^2)$ & 0.55-0.6 & 0.6-0.65 & 0.65-0.7 & 0.7-0.75 \\
+  \hline
+  \hline
+  $A_0$ & 473.1 & 365.4 & 257.1 & 182.7 \\
+  \hline
+  $A_0$ stat. err. & 10.9 & 10.1 & 8.6 & 7.5 \\
+  \hline
+  $A_0$ sys. err. & 28.7 & 116.5 & 115.8 & 115.4 \\
+  \hline
+  $A_{UU}^{\cos \phi_h}$ & -0.153 & -0.126 & -0.102 & -0.057 \\
+  \hline
+  $A_{UU}^{\cos \phi_h}$ stat. err. & 0.034 & 0.039 & 0.048 & 0.059 \\
+  \hline
+  $A_{UU}^{\cos \phi_h}$ sys. err. & 0.169 & 0.083 & 0.06 & 0.057 \\
+  \hline
+  $A_{UU}^{\cos 2 \phi_h}$ & 0.157 & 0.053 & 0.104 & 0.067 \\
+  \hline
+  $A_{UU}^{\cos 2 \phi_h}$ stat. err. & 0.033 & 0.04 & 0.047 & 0.058 \\
+  \hline
+  $A_{UU}^{\cos 2 \phi_h}$ sys. err. & 0.033 & 0.032 & 0.033 & 0.036 \\
+  \hline
+  $e^-$ selection (\%) & (57,9,39) & (18,14,27) & (14,24,34) & (12,29,41) \\
+  \hline
+  $\pi$ selection (\%) & (9,8,14) & (5,10,16) & (2,13,10) & (2,11,10) \\
+  \hline
+  Acc. model (\%) & (6,17,5) & (2,23,1) & (2,26,6) & (1,21,4) \\
+  \hline
+  RC model (\%) & (2,5,8) & (1,9,13) & (1,12,14) & (1,14,15) \\
+  \hline
+  Sec. dep. (\%) & (27,62,34) & (75,44,43) & (81,25,37) & (85,25,31) \\
+  \hline
+
+\end{tabular}
+\end{center}
+\caption{A summary of $A_0$, $A_{UU}^{\cos \phi_h}$, and $A_{UU}^{\cos 2 \phi_h}$ along with a breakdown of the different contributions of error. The triplets of numbers represent the percentage of the total systematic error for a particular source for $A_0$, $A_{UU}^{\cos \phi_h}$, and $A_{UU}^{\cos 2 \phi_h}$, respectively.}
+\label{tab:A0AcAcc_PT2bins_x1QQ1z8}
+\end{table}
 
 The $cos \phi_h$ modulations for $\pi^+$ and $\pi^-$ differ considerably, sometimes with opposite signs inticating the Boer-Mulders effect in cosine modulations at lower energies plays a more significant role than expected from higher energy measurements.
 A possible suppression of the Cahn effect due to phase space limitations, which play a more important role at lower beam energies, has been discussed by Prokudin et al.
