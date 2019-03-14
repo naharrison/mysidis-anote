@@ -1,17 +1,19 @@
 {
 gStyle->SetOptStat(0);
+gStyle->SetTitleSize(0.09, "t");
+TGaxis::SetMaxDigits(4);
 
-TH1F *hpip = new TH1F("hpip", "M_{X} for #pi+ SIDIS Events", 150, 0.5, 3.0);
+TH1F *hpip = new TH1F("hpip", "   #pi+", 150, 0.5, 3.0);
 hpip->GetXaxis()->SetTitle("M_{X} (GeV)");
-hpip->GetXaxis()->SetTitleSize(0.06);
-hpip->GetXaxis()->SetLabelSize(0.06);
-hpip->GetYaxis()->SetLabelSize(0.06);
+hpip->GetXaxis()->SetTitleSize(0.08);
+hpip->GetXaxis()->SetLabelSize(0.08);
+hpip->GetYaxis()->SetLabelSize(0.08);
 hpip->SetLineWidth(2);
-TH1F *hpim = new TH1F("hpim", "M_{X} for #pi- SIDIS Events", 150, 0.5, 3.0);
+TH1F *hpim = new TH1F("hpim", "   #pi-", 150, 0.5, 3.0);
 hpim->GetXaxis()->SetTitle("M_{X} (GeV)");
-hpim->GetXaxis()->SetTitleSize(0.06);
-hpim->GetXaxis()->SetLabelSize(0.06);
-hpim->GetYaxis()->SetLabelSize(0.06);
+hpim->GetXaxis()->SetTitleSize(0.08);
+hpim->GetXaxis()->SetLabelSize(0.08);
+hpim->GetYaxis()->SetLabelSize(0.08);
 hpim->SetLineWidth(2);
 
 TCanvas *can = new TCanvas("can", "can", 10, 10, 800, 500);
@@ -26,7 +28,7 @@ for(int i = 0; i < 193; i++) {
 }
 numbersFile.close();
 can->cd(1);
-can->cd(1)->SetTopMargin(0.08);
+can->cd(1)->SetTopMargin(0.085);
 can->cd(1)->SetBottomMargin(0.18);
 can->cd(1)->SetLeftMargin(0.12);
 can->cd(1)->SetRightMargin(0.06);

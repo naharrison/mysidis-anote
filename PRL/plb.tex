@@ -7,6 +7,9 @@
 \usepackage{mathtools}
 \usepackage{verbatim}
 
+\usepackage{lineno}
+\linenumbers
+
 \newcommand{\Phperp}{P_{h\perp}}
 \newcommand{\FUUc}{F_{UU}^{\cos\phi_h}}
 \newcommand{\FUUcc}{F_{UU}^{\cos2\phi_h}}
@@ -59,7 +62,7 @@ It is expected that TMDs will give insights into quark orbital motion and its co
 
 TMDs depend on the three-dimensional momentum of a particular parton inside of a hadron.
 One tool for accessing TMDs is Semi-inclusive deep-inelastic scattering (SIDIS) which has emerged as a powerful tool to probe nucleon structure through measurements of spin and azimuthal asymmetries.
-A SIDIS reaction is one in which a beam lepton, $\ell$, scatters off of a target nucleon, $N$, via the exchange of a virtual photon and the scattered lepton, $\ell^{\prime}$, is detected along with a single hadron, $h$; everything else in the final state, $X$, is ignored, i.e.,
+A SIDIS reaction is one in which a beam lepton, $\ell$, scatters off of a target nucleon, $N$, via the exchange of a virtual photon and the scattered lepton, $\ell^{\prime}$, is detected along with a single hadron, $h$; everything else in the final state, $X$, is undetected, i.e.,
 \begin{equation}
 \label{eq:sidis}
 \ell (k) + N(P) \rightarrow \ell^{\prime} (k^{\prime} ) + h(P_{h}) + X(P_{X})
@@ -74,12 +77,12 @@ This is a next-to-leading order effect in the strong coupling constant and contr
 In 1978, Cahn~\cite{Cahn:1978se}   discussed  similar asymmetries arising from non-zero intrinsic transverse momenta of partons.
 Although suppressed by $P_{h\perp}/Q$, where $Q$ is defined by $Q^2 = -q^2 = -(k-k^\prime)^2$ where $q$ is the four-momentum of the virtual photon, that modulation (known as the Cahn effect) appeared to be significant and dominating in the $P_{h\perp} \sim $1 GeV range.
 Significant cosine modulations of $\phi_h$, observed in various experiments, indicate that higher twist~\cite{Jaffe:1996zw} effects can be very important.
-Additional contribution to $\cos \phi_h$ and $\cos 2\phi_h$ moments coming from processes where the final meson
+Additional contributions to $\cos \phi_h$ and $\cos 2\phi_h$ moments coming from processes where the final meson
 is produced at short distances via hard-gluon exchange \cite{Berger:1979xz} may also be 
 significant in the kinematic regime where the ejected meson carries  most of 
 the virtual photon momentum.
 
-The interplay between the parton transverse momentum and spin (Boer-Mulders effect~\cite{Boer:1997nt}) can generate a leading-twist
+The interplay between the parton transverse momentum and spin, known as the Boer-Mulders effect~\cite{Boer:1997nt}, can generate a leading-twist
 contribution to the $\cos 2\phi_h$ modulation, which is one of the main focuses of our studies.
 The Boer-Mulders function, discussed in the next section, is of particular interest since it vanishes in the absence of transverse momentum and thus gives insights into the quark angular momentum contribution to the proton spin.
 
@@ -108,19 +111,22 @@ Assuming single photon exchange, the leptoproduction cross-section for an unpola
 \end{equation}
 where the structure functions, $F$, depend on kinematical variables $x,Q^2,z,P_{h\perp}$ and define the modulations of corresponding azimuthal moments with azimuthal angle $\phi_{h}$.
 The first subscript on the structure functions represents the beam polarization, the second subscript repsresents the target polarization, and the third subscript (if there is one) represents the virtual photon polarization, where U, L, and T are short for unpolarized, longitudinally polarized, and transversely polarized, respectively.
-The kinematic variables $\xbj$, $y$, and $z$  are defined as: 
-$\xbj = Q^2/{2(P\cdot q)}$, $y={(P \cdot q)/(P \cdot k)}$, $\zh=(P_h \cdot P)/(P \cdot q)$, 
-where $\gamma=2M\xbj /Q$ and $M$ and $M_h$ are the nucleon and hadron masses detected hadron.
+The kinematic variables $\xbj$, $y$, and $z$  are defined as follows.
+$\xbj = Q^2/{2(P\cdot q)}$ is the longitudinal momentum fraction of the struck quark, 
+$y={(P \cdot q)/(P \cdot k)}$ is the fraction of the beam energy carried by the virtual photon,
+and $\zh=(P_h \cdot P)/(P \cdot q)$ is the longitudinal momentum fraction of the struck quark, 
+where $\gamma=2M\xbj /Q$ and $M$ and $M_h$ are the nucleon and hadron masses.
 The ratio $\varepsilon$ of the longitudinal and transverse photon flux is given by: $\varepsilon=\frac{1-y-\gamma^2y^2/4}{1-y+y^2/2+\gamma^2y^2/4}$.
 The structure function  $F_{UU,T}$  defining the $\phi_h$-integrated cross sections could be presented as a convolution of  distribution function (DF), $f_1$,   and fragmentation function (FF), $D_1$, which  are the usual unpolarized twist-2 DF and FF, respectively. 
 
-The structure function $F^{\cos 2\ph}_{UU}$ at leading twist can be presented as a convolution of Boer-Mulders distribution function, $h_1^\perp$ (\cite{Boer:1997nt}) describing the correlation between the transverse motion
+The structure function $F^{\cos 2\ph}_{UU}$ at leading twist can be presented as a convolution of Boer-Mulders distribution function, $h_1^\perp$ \cite{Boer:1997nt} describing the correlation between the transverse motion
 of a quark and its own transverse spin, and  the Collins fragmentation function, $H_1^{\perp}$~\cite{Collins:1992kk}, describing fragmentation of transversely polarized quarks.
 The structure function $F^{\cos \ph}_{UU}$  receives contributions 
 from the convolution of twist-2 and twist-3 distribution and fragmentation functions,
-such as the twist-2 Boer-Mulders DF $h_1^\perp$ (\cite{Boer:1997nt,Pasquini:2010af}), the Collins FF $H_1^{\perp}$, and the twist-3 DFs $h$ and $f^\perp$~\cite{Bacchetta:2006tn}, which can be interpreted as a higher twist analog of the Sivers function. Both functions represent spin-orbit correlations. 
+such as the twist-2 time-reversal odd Boer-Mulders DF $h_1^\perp$ (\cite{Boer:1997nt,Pasquini:2010af}), the Collins FF $H_1^{\perp}$, and the twist-3 DFs $h$ and $f^\perp$~\cite{Bacchetta:2006tn}.
+Both functions represent spin-orbit correlations. 
 
-The cross-section modulation of  $\cos \phi_h $ in Eq.~\ref{eq:crosssection3}, gets contributions only
+The $\cos \phi_h$ modulation of the structure function $F_{UU}^{\cos \phi_h}$ in Eq.~\ref{eq:crosssection3} gets contributions only
 at sub-leading level and suppressed by powers of the hard scale Q (higher-twist).
 This type of contribution is interesting in its own as it provides complementary information
 on the quark dynamics.
@@ -143,7 +149,7 @@ The structure function $F^{\cos \ph}_{UU}$ is higher-twist by nature, which mean
 Such higher-twist observables are a key for understanding long-range quark-gluon dynamics.
 They have also been interpreted in terms of average transverse forces acting on a quark at the instant after absorbing the virtual photon \cite{Burkardt:2008vd}.
 Different contributions to the structure function  $F^{\cos \ph}_{UU}$ have been calculated, related to both internal quark motion and the Collins mechanisms.
-Sizable modulations  were predicted for pion production ~\cite{Anselmino:2005nn} with spin-orbit correlations   as the dynamical origin.
+Sizable modulations as large as $\left< \cos \phi_h \right> = 0.2$ were predicted for pion production~\cite{Anselmino:2005nn} with spin-orbit correlations as the dynamical origin.
 Within this framework, the asymmetry generated at the distribution level is given by either the convolution of the T-odd Boer-Mulders DF $h_1^{\perp}$ with the twist-3 FF $\tilde{H}$ ~\cite{Bacchetta:2006tn}, or the convolution of the  twist-3 T-odd DF $f^\perp$ with the unpolarized FF $D_1$\cite{Metz:2004je}.
 Because the $f^\perp$ DF can be interpreted as the higher-twist analog of the Sivers function, it underscores the potential of $\cos\phi_h$ modulation for studying spin-orbit correlations.
 
@@ -155,11 +161,11 @@ Because the $f^\perp$ DF can be interpreted as the higher-twist analog of the Si
 \end{center}
 Longitudinally polarized electrons were scattered off an unpolarized liquid-hydrogen target. 
 Scattered electrons were detected in CLAS.
-Electron candidates were selected by a hardware trigger using a coincidence of the gas Cherenkov counters and the lead-scintillator electromagnetic calorimeters (EC). 
+Electron candidates were selected by a hardware trigger using a coincidence of the gas Cherenkov counters and the lead-scintillator electromagnetic calorimeters. 
 
 Deep-inelastic scattering events were selected by requiring $Q^2>1$ GeV$^2$ and  $W^2>4$ GeV$^2$,
 where $W$ is the invariant mass of the hadronic final state. 
-The total number of selected $e\pi^\pm$ coincidences was $\approx 6.7M$ for the presented $z$ range, $0.4<z<0.7$, which selects the semi-inclusive region \cite{Avakian:2010ae}.
+The total number of selected $e\pi^\pm$ coincidences was $\approx 6.7M$ for the $z$ range $0.4<z<0.7$, which selects the semi-inclusive region \cite{Avakian:2010ae}.
 Events with missing-mass values for the $e\pi^\pm$ system that are smaller 
 than 1.35 GeV ($M_{X}(e\pi^\pm)<$1.35 GeV) were discarded to exclude contributions from exclusive processes. 
 In pion SIDIS events ($ep \rightarrow e\pi X$), the missing mass ($M_X$) is defined as the invariant mass of the undetected state $X$:
@@ -182,11 +188,20 @@ The vertical red line shows the cut of 1.35 GeV. Events to the left of this line
 
 A major challenge in extraction of $\phi_h$ distributions is the handling of the detector acceptance, both geometrical acceptance (the location of active detector elements) and the efficiency in the active regions.
 This is done using Monte Carlo simulations.
-A LUND-MC based event generator (PEPSI~\cite{Mankiewicz:1991dp}) was used to create a realistic large set of events (several iterations were done to make the set ``realistic'') which were passed through a GEANT based simulation of the CLAS detector.
-For a given kinematic space, the acceptance is equal to the number of reconstructed events divided by the number of generated events.
+A LUND-MC based event generator, PEPSI~\cite{Mankiewicz:1991dp}, was used to create a realistic large set of events (several iterations were done to make the set ``realistic'') which were passed through a GEANT based simulation of the CLAS detector.
+Figure~\ref{fig:pt2_data_mc_comparison} shows a data-MC comparison of $P_{h\perp}^2$ distributions.
+For a given kinematic bin, the acceptance is equal to the number of reconstructed events divided by the number of generated events.
 The number of events in the experimental data is then divided by the acceptance to get a corrected value for the number of events.
-After events have been selected and binned, and after all corrections, including bin centering corrections,  have been applied, 
-a table of values of normalized counts in elementary bins has been extracted in 5-dimensional $x$-$Q^2$-$z$-$\Phperp^2$-$\phi_h$ phase space.
+After events have been selected and binned, and after all corrections, including bin centering corrections, have been applied, 
+a table of values of counts in elementary bins has been extracted in 5-dimensional $x$-$Q^2$-$z$-$\Phperp^2$-$\phi_h$ phase space.
+The aforementioned bin centering corrections adjust for bin size and the fact that the measured cross-section is averaged over the phase space coverage of each bin.
+\begin{figure}[htp]
+\centering
+\includegraphics[width=3.0in,height=1.5in]{plots/pt2_data_mc_comparison.png}
+\caption{(Color online) $P_{h\perp}^2$ distributions for data (blue) and MC (red) for the $\pi^+$ channel (left) and $\pi^-$ channel (right).}
+\label{fig:pt2_data_mc_comparison}
+\end{figure}
+
 
 HAPRAD version 2.0 \cite{Akushevich:1999hz,Akushevich:2007jc} was used to calculate radiative corrections (RC) for each bin by calculating $\sigma_{rad+tail} \left( x, Q^2, z, P_{h\perp}^2, \phi_h \right)$ for a given \allowbreak $\sigma_{Born} \left( x, Q^2, z, P_{h\perp}^2, \phi_h \right)$ which is obtained from a model.
 The radiative correction factor is then simply
@@ -200,6 +215,7 @@ The radiative correction factor is then simply
 \end{equation}
 and the Born cross-section can be obtained by dividing the measured cross-section by the RC factor, i.e., $\sigma_{Born} = \sigma_{measured}/\text{RC factor}$.
 Three different models were used to study model dependence of radiative corrections.
+The first model came from MAID 2003~\cite{Drechsel:1999}, which was then tuned slightly to better match the data to produce the other two models.
 
 Fourteen sources of systematic error were studied - eight from electron selection cuts, three from pion selection cuts, one from the acceptance model, one from the RC model, and one from sector dependence.
 The systematic error on the final result due to a given source is the RMS of the deviations of the modified result from the original, i.e. the error from source $i$ is
@@ -210,7 +226,7 @@ The systematic error on the final result due to a given source is the RMS of the
 \end{equation}
 %
 where $\Delta_j$ is the difference between the final result with the nominal value and the final result with variation $j$, and $N_v^i$ is the number of variations for source $i$.
-Main sources of systematic error include the accetance, electron selection cuts, and variations between the six sectors of CLAS.
+Dominant sources of systematic error include the acceptance, electron selection cuts, and variations between the six sectors of CLAS.
 Table~\ref{tab:A0AcAcc_PT2bins_x1QQ1z8} breaks down the relative sizes of the errors for each source for several representative bins.
 Typically, the size of the systematic errors is comparable to the size of the statistical errors.
 Relatively large systematic errors occur in regions of phase space where the acceptance changes rapidly.
@@ -219,17 +235,27 @@ This acceptance structure is strongly correlated with $z$ and $P_{h\perp}^2$ and
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{center}
 \textbf{IV. RESULTS} \par
 \end{center}
 \begin{center}
 \textbf{A. $A_0$, $A_{UU}^{\cos\phi_h}$, and $A_{UU}^{\cos 2\phi_h}$} \par
 \end{center}
-To extract the $\phi_h$-independent term ($A_0$) and azimuthal moments ($A_{UU}^{\cos\phi_h}$ and $A_{UU}^{\cos 2\phi_h}$), the $\phi_h$ distributions for charged pions for each $x-Q^2-z-P_{h\perp}^2$ bin are fit with the function $a(1 + b\cos\phi_h + c\cos 2\phi_h)$.
+To extract the $\phi_h$-independent term ($A_0$) and azimuthal moments ($A_{UU}^{\cos\phi_h}$ and $A_{UU}^{\cos 2\phi_h}$), the $\phi_h$ distributions for charged pions for each $x$, $Q^2$, $z$, and $P_{h\perp}^2$ bin are fit with the function $a(1 + b\cos\phi_h + c\cos 2\phi_h)$.
 The parameters $a$, $b$, and $c$ then directly give $A_0$, $A_{UU}^{\cos\phi_h}$, and $A_{UU}^{\cos 2\phi_h}$ for each $x-Q^2-z-P_{h\perp}^2$ bin.
+Comparing this to equation~\ref{eq:crosssection3} gives
+\begin{equation}
+\label{eq:A0AcAccDefinitions}
+\begin{split}
+& A_0 = \frac{2\pi}{2(k\cdot P)x} \frac{\alpha^{2}}{xyQ^{2}} \frac{y^{2}}{2 \left( 1 - \varepsilon \right)} \left( 1 + \frac{\gamma^{2}}{2x} \right) \left( F_{UU,T} + \varepsilon F_{UU,L} \right)
+\\
+& A_{UU}^{\cos \phi_h} = \frac{\sqrt{2 \varepsilon \left( 1 + \varepsilon \right)} F_{UU}^{\cos \phi_h}}{F_{UU,T} + \varepsilon F_{UU,L}}
+\\
+& A_{UU}^{\cos 2 \phi_h} = \frac{\varepsilon F_{UU}^{\cos 2 \phi_h}}{F_{UU,T} + \varepsilon F_{UU,L}} .
+\end{split}
+\end{equation}
 A complete table of results can be found in the ancillary files.
-Several representitive plots are shown here in figure~\ref{fig:A0AcAcc_zPT2bins_x1QQ1_final}, which shows $A_0$, $A_{UU}^{\cos\phi_h}$, and $A_{UU}^{\cos 2\phi_h}$ vs $P_{h\perp}^2$ for several $z$ bins for both pion channels.
+Several representitive plots are shown here in figure~\ref{fig:A0AcAcc_zPT2bins_x1QQ1_final}, which shows the dependence of $P_{h\perp}^2$ on $A_0$, $A_{UU}^{\cos\phi_h}$, and $A_{UU}^{\cos 2\phi_h}$ for each charged pion for several $z$ bins.
 %
 \begin{figure}[htp]
 \centering
@@ -283,17 +309,18 @@ Several representitive plots are shown here in figure~\ref{fig:A0AcAcc_zPT2bins_
 \label{tab:A0AcAcc_PT2bins_x1QQ1z8}
 \end{table}
 
-The $cos \phi_h$ modulations for $\pi^+$ and $\pi^-$ differ considerably, sometimes with opposite signs inticating the Boer-Mulders effect in cosine modulations at lower energies plays a more significant role than expected from higher energy measurements.
-A possible suppression of the Cahn effect due to phase space limitations, which play a more important role at lower beam energies, has been discussed by Prokudin et al.
+The $\cos \phi_h$ modulations for $\pi^+$ and $\pi^-$ differ considerably, sometimes with opposite signs indicating the Boer-Mulders effect in cosine modulations at lower energies plays a more significant role than expected from higher energy measurements.
+A possible suppression of the Cahn effect due to phase space limitations, which play a more important role at lower beam energies, has been discussed by Boglione, Melis, and Prokudin~\cite{Boglione:2011wm}.
 
-The measured $cos 2 \phi_h$ moment for $\pi^+$ and $\pi^-$ in most of the kinematics are close to each other indicating the contribution from the Boer-Mulders effect may not be dominant.
-The $\rm cos \phi_h$ asymmetry gets contributions only at sub-leading twist and can be used to constrain the related terms~\cite{Cahn:1978se,Anselmino:2005nn,Berger:1979xz}.
+The measured $\cos 2 \phi_h$ moment for $\pi^+$ and $\pi^-$ in most of the kinematic bins are close to each other indicating the contribution from the Boer-Mulders effect may not be dominant.
+The $\cos \phi_h$ asymmetry gets contributions only at sub-leading twist and can be used to constrain the related terms~\cite{Cahn:1978se,Anselmino:2005nn,Berger:1979xz}.
 The formalism based on the twist-3 approach could be tested in $Q^2$ dependence of $\cos\phi_h$ modulations.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{center}
 \textbf{B. Comparisons} \par
 \end{center}
+
 During the last few years several precise SIDIS measurements have become available. The CLAS
 collaboration measured non-zero cosine modulations for positive pions produced
 by 6 GeV/c electrons scattering off the proton~\cite{Osipenko:2008rv}.  The
@@ -348,7 +375,8 @@ f(y)\approx \frac{(2-y)\sqrt{1-y}}{1-y+y^{2}/2} ,
 the CLAS and HERMES measurements are found to 
 be consistent with each other in a wide range of $Q^2$, as shown in Figs.~\ref{fig:clas-hermes}, indicating that at energies as low as 5-6 GeV, the
 behavior of azimuthal modulations are similar to higher energy measurements. 
-For comparison, the lowest $\xbj$ CLAS bin and highest $\xbj$ HERMES bins were used with equal average value of $\xbj\approx$ 0.19, $z\approx$ 0.45 and $\Phperp^2 \approx$ 0.42 GeV$^2$.
+For comparison, the lowest $\xbj$ CLAS bin and highest $\xbj$ HERMES bins were used with equal average value of $\xbj\approx$ 0.19, $z\approx$ 0.45 and $\Phperp^2 \approx$ 0.42 GeV$^2$;
+the $Q^2$ range for CLAS is 1.0 - 1.5 $\text{GeV}^2$ while the $Q^2$ range for HERMES is 3.5 - 8.0 $\text{GeV}^2$.
 
 The CLAS data provide significant improvements in the precision of azimuthal moments for the kinematic region where the two data sets overlap, and they extend the measurements to the large $\xbj$ region not accessible at HERMES.
 \begin{figure}[h]
